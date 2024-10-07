@@ -1,0 +1,72 @@
+h1. Alert Notification Get Well Program
+
+{toc}
+
+h2. Overview
+
+The Alert Notification Get Well Program is an initiative to streamline and improve our alerting system by eliminating the use of email as an alerting notification action. This program aims to enhance our monitoring and observability capabilities, ensuring that alerts are properly routed and addressed in a timely manner.
+
+h2. Objectives
+
+# Eliminate email as an alerting notification action
+# Standardize alert routing through the central alert pipeline
+# Ensure all alerts are properly configured in BigPanda
+# Improve response times for urgent and non-urgent alerts
+
+h2. Acceptable Alert Notification Actions
+
+* *Urgent Alerts*: Trigger a phone or text page
+* *Non-Urgent Alerts*: Create an incident in ServiceNow
+
+h2. Alert Routing Process
+
+# All monitoring tool alerts should be routed through the central alert pipeline.
+# The pipeline then routes the alerts to BigPanda for further processing and management.
+
+h2. ss Dashboard for Alert Review
+
+We have created a ss dashboard to help teams identify alerts that are not compliant with the new standards. This dashboard consists of two panels:
+
+h3. Panel 1: Alert Count by Business Application ID
+
+This panel groups and counts the alerts by the business application ID, providing an overview of which applications have the most non-compliant alerts.
+
+h3. Panel 2: Detailed Alert Information
+
+This panel displays a table with detailed information about each non-compliant alert, including:
+
+* Application name
+* Alert name
+* Owning team
+* Link to the alert for modification
+
+h2. Action Items for Teams
+
+# *Review the Dashboard*: Regularly check the ss dashboard to identify alerts associated with your team or application.
+# *Evaluate Alerts*: For each alert listed in Panel 2:
+## Determine if the alert is still needed
+## If not needed, delete the alert
+## If needed, update the alert configuration to comply with the new standards
+# *Update Alert Configuration*:
+## Remove email notification actions
+## Configure appropriate routing to the central enterprise alert event pipeline
+## Ensure proper integration with BigPanda
+
+h2. Best Practices
+
+# Prioritize urgent alerts for immediate action
+# Regularly review and update alert thresholds to reduce false positives
+# Document any changes made to alerts for future reference
+# Collaborate with other teams to standardize alert configurations across the organization
+
+h2. Support and Resources
+
+If you need assistance with updating alert configurations or have questions about the Get Well Program, please contact the Monitoring and Observability team at [insert contact information].
+
+h2. Progress Tracking
+
+We will regularly review the ss dashboard to track progress on alert remediation. Teams are encouraged to update their alerts promptly to ensure compliance with the new standards.
+
+h2. Conclusion
+
+The Alert Notification Get Well Program is crucial for improving our organization's monitoring and observability capabilities. By following these guidelines and actively participating in the alert review process, we can enhance our ability to respond to issues quickly and effectively, ultimately providing better service to our customers and stakeholders.
